@@ -10,7 +10,7 @@ void setUp(void)
 void tearDown(void)
 {
 }
-/*
+
 void test_ReverseString_NeedToImplement(void)
 {
     TEST_IGNORE_MESSAGE("Need to Implement ReverseString");
@@ -52,10 +52,6 @@ void test_getStringLength_given_a_string_expect_11(void)
 {
   TEST_ASSERT_EQUAL(11,getStringLength("combo-wombo"));
 }
-*/
-
-/******************************PASS END HERE************************/
-
 
 void test_ReverseString_given_framework_expect_korwemarf(void)
 {
@@ -79,4 +75,10 @@ void test_ReverseString_given_damnDaniel_expect_leinaDnmad(void)
 {
   char *str = ReverseString("damnDaniel");
   TEST_ASSERT_EQUAL_STRING("leinaDnmad", str);
+}
+
+void test_ReverseString_given_wow_expect_wow(void)
+{
+  char *str = ReverseString("wow");
+  TEST_ASSERT_EQUAL_STRING("wow", str);
 }

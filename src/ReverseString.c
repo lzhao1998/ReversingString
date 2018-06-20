@@ -21,9 +21,8 @@ char *ReverseString(char *str)
 {
   int i;
   int length = getStringLength(str);	// Get the string length into i
-  char temp[255];
+  char *temp = (char*)malloc((length-1)*sizeof(char));
   char *stringRead = str;		// Let the string store into pointer
-  char *reverseStr = temp;	// Store the letter 1 by 1 from temp to the reverseString
   for(i = 0; i < length ; i++)
   {
 	  // Reverse the string by storing the letter 1 by 1 from backward to the temp
@@ -31,6 +30,8 @@ char *ReverseString(char *str)
 	  temp[i] = stringRead[(length-i-1)];
     printf("temp is %s\n",temp);
   }
-  printf("reverseStr is %s\n", reverseStr);
-  return reverseStr;
+  
+  //put NULL after the last character to avoid unnesssary thing
+  temp[i] = '\0';
+  return temp;
 }
