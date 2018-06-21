@@ -57,28 +57,33 @@ void test_ReverseString_given_framework_expect_korwemarf(void)
 {
   char *str = ReverseString("framework");
   TEST_ASSERT_EQUAL_STRING("krowemarf", str);
+  free(str);
 }
 
 void test_ReverseString_given_hello_expect_olleh(void)
 {
   char *str = ReverseString("hello");
   TEST_ASSERT_EQUAL_STRING("olleh", str);
+  free(str);
 }
 
 void test_ReverseString_given_har_nani_expect_inan_rah(void)
 {
   char *str = ReverseString("har nani");
   TEST_ASSERT_EQUAL_STRING("inan rah", str);
+  free(str);
 }
 
 void test_ReverseString_given_damnDaniel_expect_leinaDnmad(void)
 {
   char *str = ReverseString("damnDaniel");
   TEST_ASSERT_EQUAL_STRING("leinaDnmad", str);
+  free(str);
 }
 
 void test_ReverseString_given_wow_expect_wow(void)
 {
   char *str = ReverseString("wow");
   TEST_ASSERT_EQUAL_STRING("wow", str);
+  free(str);
 }
