@@ -2,13 +2,13 @@
 
 This project is use to reverse the string whatever user key in.
 
-Example:
-Input is "Hello World"
-Output will be "dlroW olleH"
+Example:<br />
+Input is "Hello World"<br />
+Output will be "dlroW olleH"<br />
 
-Input is "framework"
-Output will be "krowemarf"
-
-Input is "qwertyuiop123"
-Output will be "321poiuytrewq"
+Input is "framework"<br />
+Output will be "krowemarf"<br />
+<br />
+Input is "qwertyuiop123"<br />
+Output will be "321poiuytrewq"<br />
 
